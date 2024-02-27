@@ -1,0 +1,64 @@
+import { navLinks } from "../data";
+import styles from "../data/styles";
+import logo from "../assets/LogoDev.webp";
+import { ImGithub } from "react-icons/im";
+import { GrLinkedin } from "react-icons/gr";
+
+
+export const Footer = () => (
+  <footer className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+    <div className="w-full max-w-screen-xl mx-auto">
+      <div className="block ss:flex ss:items-center ss:justify-between">
+        <a
+          href=""
+          className="flex items-center mb-1 sm:mb-0 space-x-3 rtl:space-x-reverse"
+        >
+          {/* Logo */}
+          <img src={logo} alt="logo" className="w-[42px] h-[42px]" />
+          {/* <span className="self-center text-2xl font-poppins font-semibold whitespace-nowrap text-white">
+                GB
+              </span> */}
+        </a>
+
+        {/* NavLinks */}
+        <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`font-poppins font-normal cursor-pointer mt-2 xs:mt-0 text-[16px] hover:text-white ${
+                index === navLinks.length - 1 ? "mr-0" : "mr-10"
+              }`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      fill
+      {/* Linea */}
+      <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+      <div className="flex flex-col justify-between items-center ss:flex-row ss:items-center ss:justify-between">
+        <span className="text-sm text-gray-500 sm:text-center">
+          © 2024{" "}
+          <a href="#" className="hover:underline">
+            Dev. German Briceño
+          </a>
+        </span>
+
+        {/*Iconos Logos */}
+        <div className="flex mt-4 sm:justify-center sm:mt-0">
+          <a href="#" className="ms-5">
+            <ImGithub size={18} className="text-gray-500 hover:text-white" />
+          </a>
+
+          <a href="#" className="ms-5">
+            <GrLinkedin size={18} className="text-gray-500 hover:text-[#0A66C2]" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+);
+
+
+
