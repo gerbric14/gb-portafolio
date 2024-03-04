@@ -1,12 +1,12 @@
 import styles from "../data/styles";
 import { Card } from "./Card";
+import { CardImg } from "./CardImg";
+import { CardProject } from "./CardProject";
 
 export const Projects = () => (
   <section id="proyectos" className={`flex flex-1 flex-col ${styles.marginY}`}>
-    
-    {/* Grandientes */}
-    <div className="absolute z-[0] w-[50%] h-[50%] right-[5%] rounded-full blue__gradient bottom-50" />
-
+    {/* Grandientes
+    <div className="absolute z-[0] w-[50%] h-[50%] right-[5%] rounded-full blue__gradient bottom-50" /> */}
 
     <div className="">
       <h2 className={`${styles.heading2}`}>Proyectos</h2>
@@ -17,11 +17,31 @@ export const Projects = () => (
       </p>
     </div>
 
-    <div className="flex flex-col items-center justify-items-stretch sm:grid sm:grid-cols-2 gap-8 lg:grid-cols-3">
+    {/* <div className="flex flex-col items-center justify-items-stretch sm:grid sm:grid-cols-2 gap-8 lg:grid-cols-3">
       <Card />
       <Card />
       <Card />
       
+    </div> */}
+
+    <div
+      className={`${styles.marginX} ss:grid ss:justify-center md:grid md:grid-cols-2  `}
+    >
+      <CardImg
+        title={"Restaurante App"}
+        desc={
+          "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados."
+        }
+      />
+
+      <CardImg
+        title={"Planificador de gastos"}
+        desc={
+          "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas."
+        }
+      />
+
+
     </div>
   </section>
 );

@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className={`flex flex-col ${styles.marginY} sm:px-16 px-6 `}
+      className={`flex flex-col ${styles.marginY} sm:px-16 px-6`}
     >
       <div
         className={`flex-1 ${styles.flexStart} flex-col items-center xl:px-0`}
