@@ -1,3 +1,6 @@
+import logojs from "../assets/JSLogo.webp";
+import imgcard from "../assets/imgcard.webp";
+
 export const navLinks = [
   {
     id: "home",
@@ -23,9 +26,9 @@ export const contactInfo = [
     name: "nombre",
     title: "Nombre",
   },
-  { id: 2,
-    name: "apellido",
-    title: "Apellido",
+  { id: 2, 
+    name: "apellido", 
+    title: "Apellido" 
   },
   {
     id: 3,
@@ -38,3 +41,17 @@ export const contactInfo = [
     title: "Email",
   },
 ];
+
+export const dataProject = [
+  {
+    id: 1,
+    title: "Restaurant App",
+    desc: "app ue sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
+  },
+  {
+    id: 2,
+    title: "Planificador de gastos",
+    desc: "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas.",
+  },
+];
+
