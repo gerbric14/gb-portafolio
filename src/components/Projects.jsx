@@ -3,10 +3,12 @@ import { Card } from "./Card";
 import { CardImg } from "./CardImg";
 import { CardProject } from "./CardProject";
 
+
 export const Projects = () => (
   <section id="proyectos" className={`flex flex-1 flex-col ${styles.marginY}`}>
     {/* Grandientes
     <div className="absolute z-[0] w-[50%] h-[50%] right-[5%] rounded-full blue__gradient bottom-50" /> */}
+
 
     <div className="">
       <h2 className={`${styles.heading2}`}>Proyectos</h2>
@@ -25,7 +27,7 @@ export const Projects = () => (
     </div> */}
 
     <div
-      className={`${styles.marginX} ss:grid ss:justify-center md:grid md:grid-cols-2  `}
+      className={`flex flex-col items-center gap-4 md:flex-row md:justify-center`}
     >
       <CardImg
         title={"Restaurante App"}
