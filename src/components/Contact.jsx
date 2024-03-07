@@ -259,7 +259,7 @@ export const Contact = () => {
         </div>
 
         <button
-          className={`${layout.boton} ${styles} mr-4 w-full text-gray-800 sm:w-[50%]`}
+          className={`${layout.boton} ${styles} mr-4 w-full sm:w-[50%] `}
         >
           Envíar!
         </button>
