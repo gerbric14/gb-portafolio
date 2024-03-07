@@ -7,10 +7,9 @@ export const Projects = () => (
     {/* Grandientes
     <div className="absolute z-[0] w-[50%] h-[50%] right-[5%] rounded-full blue__gradient bottom-50" /> */}
 
-
     <div className="">
       <h2 className={`${styles.heading2}`}>Proyectos</h2>
-      <p className={`${styles.paragraph} mb-4`}>
+      <p className={`${styles.paragraph} mb-4 text-justify`}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, quo
         fugit! Accusamus nemo autem repudiandae quae libero! Saepe nulla minima
         ducimus quod culpa dicta? Dolores velit atque quidem quam asperiores.
@@ -25,7 +24,7 @@ export const Projects = () => (
     </div> */}
 
     <div
-      className={`flex flex-col items-center gap-4 md:flex-row md:justify-center`}
+      className={`flex flex-col items-center gap-4 md:flex-row md:justify-center text-justify`}
     >
       <CardImg
         title={"Restaurante App"}
@@ -40,8 +39,6 @@ export const Projects = () => (
           "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas."
         }
       />
-
-
     </div>
   </section>
 );

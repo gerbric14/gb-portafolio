@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section id="home" className={`flex flex-col sm:px-16 px-6 h-screen`}>
       <div
-        className={`flex-1 ${styles.flexStart} flex-col items-center xl:px-0`}
+        className={`flex-auto ${styles.flexCenter} flex-col xl:px-0`}
       >
         {/* Grandientes */}
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
@@ -22,13 +22,13 @@ export const Hero = () => {
 
         {/* Presentacion */}
         <div className="flex flex-col w-full m-6">
-          <p className="py-1 flex-1 font-poppinsfont-normal text-[52px] ss:text-[62px] text-white ss:leading-[70px] leading-[75px] text-center ">
+          <p className="py-1 flex-1 font-poppins font-normal text-[52px] ss:text-[62px] text-white ss:leading-[70px] leading-[75px] text-center ">
             Hola, soy
             <br className="xs:block hidden" />{" "}
             <span className="py-1 text-white ">German Briceño</span>
             <br className="hidden ss:flex ss:flex-row" />
           </p>
-          <h1 className="flex-1 font-poppins font-semibold text-[52px] ss:text-[62px] text-gradient ss:leading-[70px] leading-[75px] text-center it md:mb-6">
+          <h1 className="flex-1 font-poppins font-semibold text-[38px] ss:text-[62px] text-gradient ss:leading-[70px] leading-[75px] text-center it md:mb-6">
             Desarrollador Fronted
           </h1>
         </div>

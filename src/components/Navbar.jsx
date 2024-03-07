@@ -10,7 +10,9 @@ export const Navbar = () => {
 
   return (
     <nav className="w-full py-6 flex justify-between items-center ">
-      <img src={logo} alt="logo" className="w-[42px] h-[42px]" />
+      <a href="#">
+        <img src={logo} alt="logo" className="w-[42px] h-[42px]" />
+      </a>
 
       {/* Desktop */}
       <ul className="list-none sm:flex hidden justify-end items-center flex- z-[3]">

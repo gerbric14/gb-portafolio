@@ -61,7 +61,7 @@ export const Contact = () => {
 
       <div className="md:max-w-[40%]">
         <h2 className={`${styles.heading2}`}>Contáctame</h2>
-        <p className={`${styles.paragraph} mb-4`}>
+        <p className={`${styles.paragraph} mb-4 text-justify`}>
           De la mano con las tecnologías de hoy en día crearemos páginas únicas
           he increíbles adaptadas a todo tipo de pantalla y a tus necesidades.
           ¿Qué esperas? Contáctame y hagamos realidad eso que estas imaginando.
