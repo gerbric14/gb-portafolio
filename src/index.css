@@ -88,7 +88,15 @@
 }
 
 .bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.bg-mobile{
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+}
+
+.bg-mobile-hover {
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
 
 .box-shadow {

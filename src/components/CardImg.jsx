@@ -32,12 +32,15 @@ function Tab({
 }) {
   return (
     <div
-      className={`max-w-sm min-w-[384px] rounded-xl overflow-hidden bg-gray-400 ${styles.marginX} my-8`}
+      className={`max-w-sm min-w-[384px] rounded-xl overflow-hidden bg-discount-gradient ${styles.marginX} my-8`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
         <div className="flex justify-center">
-          <button className={`${layout.boton} ${styles} hover:bg-gray-600`} onClick={onShow}>
+          <button
+            className={`${layout.boton} ${styles} hover:bg-indigo-200`}
+            onClick={onShow}
+          >
             {showMore ? (
               <img src={devices} alt={devices} />
             ) : (
@@ -65,11 +68,9 @@ function Tab({
 
         <div className="px-6 py-2 h-[208px] flex-auto">
           {/* Titulo */}
-          <h3 className="font-bold text-xl mb-2 text-[#145b88] mt-3">
-            {title}
-          </h3>
+          <h3 className="font-bold text-xl mb-2 text-white mt-3">{title}</h3>
           {/* Descripcion */}
-          <p className="text-base text-primarygb">{desc} </p>
+          <p className="text-base text-white">{desc} </p>
         </div>
 
         {/* Etiquetas */}
