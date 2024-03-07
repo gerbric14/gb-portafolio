@@ -32,12 +32,12 @@ function Tab({
 }) {
   return (
     <div
-      className={`max-w-sm min-w-[384px] rounded-xl overflow-hidden bg-dimWhite ${styles.marginY} ${styles.marginX}`}
+      className={`max-w-sm min-w-[384px] rounded-xl overflow-hidden bg-gray-400 ${styles.marginX} my-8`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
         <div className="flex justify-center">
-          <button className={`${layout.boton} ${styles}`} onClick={onShow}>
+          <button className={`${layout.boton} ${styles} hover:bg-gray-600`} onClick={onShow}>
             {showMore ? (
               <img src={devices} alt={devices} />
             ) : (

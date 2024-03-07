@@ -1,7 +1,5 @@
 import styles from "../data/styles";
-import { Card } from "./Card";
 import { CardImg } from "./CardImg";
-import { CardProject } from "./CardProject";
 
 
 export const Projects = () => (
