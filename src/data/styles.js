@@ -33,7 +33,7 @@ export const layout = {
     "font-poppins peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan peer-focus:dark:text-cyan peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6",
 
   boton:
-    "py-1 px-2 flex justify-center my-1 border border-gray-400 text-white font-poppins font-medium text-[18px] outline-none rounded-[10px] hover:bg-[#12253c] hover:text-cyan hover:border hover:border-cyan transition-colors ease-in-out duration-200",
+    "py-1 px-2 flex justify-center my-1 border border-gray-400 text-white font-poppins font-medium text-[18px] outline-none rounded-[10px] transition-colors ease-in-out duration-200",
 };
 
 export default styles;
