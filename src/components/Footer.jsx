@@ -3,6 +3,7 @@ import styles from "../data/styles";
 import logo from "../assets/LogoDev.webp";
 import { ImGithub } from "react-icons/im";
 import { GrLinkedin } from "react-icons/gr";
+import { IconsLogos } from "./IconsLogos";
 
 
 export const Footer = () => (
@@ -46,15 +47,8 @@ export const Footer = () => (
         </span>
 
         {/*Iconos Logos */}
-        <div className="flex mt-4 sm:justify-center sm:mt-0">
-          <a href="#" className="ms-5">
-            <ImGithub size={18} className="text-gray-500 hover:text-white" />
-          </a>
+        <IconsLogos size={24}/>
 
-          <a href="#" className="ms-5">
-            <GrLinkedin size={18} className="text-gray-500 hover:text-[#0A66C2]" />
-          </a>
-        </div>
       </div>
     </div>
   </footer>
