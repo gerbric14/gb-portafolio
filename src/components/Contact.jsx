@@ -262,7 +262,7 @@ export const Contact = () => {
         <button
           className={`${layout.boton} ${styles} mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan `}
         >
-          Envíar!
+          Envíar
         </button>
 
         <ToastContainer />

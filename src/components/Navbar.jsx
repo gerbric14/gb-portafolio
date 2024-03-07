@@ -52,7 +52,10 @@ export const Navbar = () => {
                  flex justify-center items-center rounded-full shadow-lg bg-mobile-hover p-4 hover:scale-110 hover:text-cyan ease-in duration-200 ${
                    active === nav.title ? "text-white" : "text-dimWhite"
                  } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => { 
+                  setActive(nav.title); 
+                  setToggle((prev) => !prev);
+                }}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
