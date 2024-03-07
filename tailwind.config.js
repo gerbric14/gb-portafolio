@@ -29,6 +29,19 @@ module.exports = withMT({
       lg: "1200px",
       xl: "1700px",
     },
+    animation: {
+      shimmer: "shimmer 2s linear infinite",
+    },
+    keyframes: {
+      shimmer: {
+        from: {
+          backgroundPosition: "0 0",
+        },
+        to: {
+          backgroundPosition: "-200% 0",
+        },
+      },
+    },
   },
   variants: {
     gradientColorStops: [
@@ -39,5 +52,6 @@ module.exports = withMT({
       "group-hover",
     ],
   },
+
   plugins: [require("flowbite/plugin")],
 });

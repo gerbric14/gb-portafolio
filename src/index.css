@@ -153,3 +153,28 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.animation-text {
+  border-right: 2px solid #fff;
+  animation: typing-text steps(40) 3s infinite, blink ease 0.3s infinite;
+  width: max-content;
+
+
+
+}
+
+@keyframes typing-text {
+  from{
+    width: 0%
+  }
+  to{
+    width: 100%
+  }
+}
+
+@keyframes typing-text {
+  to {
+    border-color: transparent
+  }
+}
+
