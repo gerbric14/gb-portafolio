@@ -3,7 +3,11 @@
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       colors: {
@@ -25,6 +29,19 @@ module.exports = withMT({
       lg: "1200px",
       xl: "1700px",
     },
+    animation: {
+      shimmer: "shimmer 2s linear infinite",
+    },
+    keyframes: {
+      shimmer: {
+        from: {
+          backgroundPosition: "0 0",
+        },
+        to: {
+          backgroundPosition: "-200% 0",
+        },
+      },
+    },
   },
   variants: {
     gradientColorStops: [
@@ -35,5 +52,6 @@ module.exports = withMT({
       "group-hover",
     ],
   },
-  plugins: [],
+
+  plugins: [require("flowbite/plugin")],
 });

@@ -5,6 +5,7 @@ import styles, { layout } from "../data/styles";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import Button from "./Button";
 
 
 
@@ -259,10 +260,11 @@ export const Contact = () => {
         </div>
 
         <button
-          className={`${layout.boton} ${styles} mr-4 w-full text-gray-800 sm:w-[50%]`}
+          className={`${layout.boton} ${styles} mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan `}
         >
           Envíar!
         </button>
+
         <ToastContainer />
       </form>
     </section>
