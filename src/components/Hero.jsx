@@ -1,10 +1,5 @@
 import styles from "../data/styles"
-import docdown from '../assets/doc-down.svg'
-import rocket from '../assets/rocket.svg'
-import ButtonImg from "./ButtonImg";
-import { ButtonMaterial } from "./ButtonMaterial";
 import { IconsLogos } from "./IconsLogos";
-
 
 export const Hero = () => {
 
@@ -19,7 +14,7 @@ export const Hero = () => {
         <div className="absolute z-[1] w-[20%] h-[20%] rounded-full bottom-40 white__gradient" />
 
         {/* barra */}
-        <div className=" py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-6">
+        <div className=" py-[4px] px-1 bg-discount-gradient rounded-[10px]">
           <p className={`${styles.paragraph} text-white ml-2`}>
             Disponible para trabajar
           </p>
@@ -33,21 +28,12 @@ export const Hero = () => {
             <span className="py-1 text-white ">German Briceño</span>
             <br className="hidden ss:flex ss:flex-row" />
           </p>
-          <h1 className="flex-1 font-poppins font-semibold text-[52px] ss:text-[62px] text-gradient ss:leading-[70px] leading-[75px] text-center it mb-6">
+          <h1 className="flex-1 font-poppins font-semibold text-[52px] ss:text-[62px] text-gradient ss:leading-[70px] leading-[75px] text-center it md:mb-6">
             Desarrollador Fronted
           </h1>
         </div>
 
-        <div className="flex z-[2] mt-4">
-          {/* <ButtonImg
-            text={"Contáctame"}
-            styles={"mr-4 ml-4 text-primarygb"}
-            img={rocket}
-          />
-          <ButtonImg text={"CV"} styles={"mr-4 text-primarygb"} img={docdown} /> */}
-
-          {/* <ButtonMaterial  children={"Contáctame"}/>
-          <ButtonMaterial  children={"CV"}/> */}
+        <div className="flex z-[2] md:mt-4">
 
           {/*Iconos Logos */}
           <IconsLogos  size={30}/>
