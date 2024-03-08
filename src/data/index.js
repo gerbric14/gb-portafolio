@@ -4,7 +4,7 @@ import imgcard from "../assets/imgcard.webp";
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Inicio",
   },
   {
     id: "tecnologias",
