@@ -34,7 +34,7 @@ export const Hero = () => {
         <div className="absolute z-[1] w-[20%] h-[20%] rounded-full bottom-40 white__gradient" />
 
         {/* barra */}
-        <div className=" py-[4px] px-1 bg-discount-gradient rounded-[10px]">
+        <div className=" py-[4px] px-1 bg-discount-gradient rounded-[10px] animate-jump-in animate-delay-300 animate-once">
           <p className={`${styles.paragraph} text-white ml-2`}>
             Disponible para trabajar
           </p>
