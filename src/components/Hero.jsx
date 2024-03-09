@@ -42,13 +42,13 @@ export const Hero = () => {
 
         {/* Presentacion */}
         <div className="flex flex-col w-full m-6">
-          <p className="py-1 flex-1 font-poppins font-normal text-[52px] ss:text-[62px] text-white ss:leading-[70px] leading-[75px] text-center ">
+          <p className="py-1 flex-1 font-poppins font-normal text-[38px] xs:text-[52px] ss:text-[62px] text-white ss:leading-[70px] leading-[75px] text-center ">
             Hola, soy
             <br className="xs:block hidden" />{" "}
             <span className="py-1 text-white ">German Briceño</span>
             <br className="hidden ss:flex ss:flex-row" />
           </p>
-          <h1 className="flex-1 font-poppins font-semibold text-[38px] ss:text-[52px] text-gradient ss:leading-[70px] leading-[75px] text-center it md:mb-6">
+          <h1 className="flex-1 font-poppins font-semibold text-[30px] xs:text-[38px] ss:text-[52px] text-gradient ss:leading-[70px] leading-[75px] text-center it md:mb-6">
             <span ref={el}></span>
           </h1>
         </div>
