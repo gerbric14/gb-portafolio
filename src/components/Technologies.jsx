@@ -1,208 +1,51 @@
 import styles, { layout } from "../data/styles";
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
+import { CardTecnologias } from "./CardTecnologias";
+import logogit from "../assets/Logo-git.webp";
+import logohtml from "../assets/Logo-HTML5.webp";
+import logojs from "../assets/Logo-JavaScript.webp";
+import logogithub from "../assets/LogoGH.webp";
+import logotailwind from "../assets/LogoTailwind.webp";
+import logoreact from "../assets/LogoReact.webp";
+import logocss from "../assets/LogoCss.webp";
+import logopostgresql from "../assets/LogoPostgresql.webp";
+import logomongo from "../assets/LogoMongoDB.webp";
+import logonext from "../assets/LogoNext.webp";
+import logonode from "../assets/LogoNodejs.webp";
+import logobootstrap from "../assets/LogoBootstrap.webp";
 
 
 export const Technologies = () => {
 
-   const data = [
-     {
-       label: "HTML",
-       value: "html",
-       images: [
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-         },
-         {
-           imageLink:
-             "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-         },
-         {
-           imageLink:
-             "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
-         },
-       ],
-     },
-     {
-       label: "React",
-       value: "react",
-       images: [
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-         },
-       ],
-     },
-     {
-       label: "Vue",
-       value: "vue",
-       images: [
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-         },
-         {
-           imageLink:
-             "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-         },
-         {
-           imageLink:
-             "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
-         },
-       ],
-     },
-     {
-       label: "Angular",
-       value: "angular",
-       images: [
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2560&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-         },
-       ],
-     },
-     {
-       label: "Svelte",
-       value: "svelte",
-       images: [
-         {
-           imageLink:
-             "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-         },
-         {
-           imageLink:
-             "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-         },
-         {
-           imageLink:
-             "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-         },
-       ],
-     },
-   ];
   return (
     <section
       id="tecnologias"
-      className={`flex flex-1 flex-col ${styles.marginY}`}
+      className={`flex flex-1 flex-col ${styles.marginY} `}
     >
       <div className="">
         <h2 className={`${styles.heading2}`}>Tecnologías</h2>
-        <p className={`${styles.paragraph} mb-4`}>
+        <p className={`${styles.paragraph} mb-4 text-justify`}>
           En mi viaje por el desarrollo web he cultivado habilidades y una serie
           de experiencias. Mi stack tecnológico incluye:
         </p>
       </div>
 
-      <Tabs value="html">
-        <TabsHeader className="bg-dimWhite">
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody className="grid grid-cols-1 gap-4 ">
-          {data.map(({ value, images }) => (
-            <TabPanel
-              className="grid grid-cols-2 gap-4 md:grid-cols-3"
-              key={value}
-              value={value}
-            >
-              {images?.map(({ imageLink }, index) => (
-                <div key={index}>
-                  <img
-                    className="h-40 w-full max-w-full rounded-lg object-cover object-center"
-                    src={imageLink}
-                    alt="image-photo"
-                  />
-                </div>
-              ))}
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
+      {/*Card Tecnologias  */}
+      <div
+        className={`my-8 flex flex-wrap place-content-center sm:grid sm:grid-cols-6 gap-2`}
+      >
+        <CardTecnologias text={"Git"} img={logogit} />
+        <CardTecnologias text={"HTML5"} img={logohtml} />
+        <CardTecnologias text={"JavaScript"} img={logojs} />
+        <CardTecnologias text={"React"} img={logoreact} />
+        <CardTecnologias text={"TailwindCss"} img={logotailwind} />
+        <CardTecnologias text={"GitHub"} img={logogithub} />
+        <CardTecnologias text={"Css"} img={logocss} />
+        <CardTecnologias text={"PostgreSQL"} img={logopostgresql} />
+        <CardTecnologias text={"MongoDB"} img={logomongo} />
+        <CardTecnologias text={"NextJs"} img={logonext} />
+        <CardTecnologias text={"NodeJs"} img={logonode} />
+        <CardTecnologias text={"Bootstrap"} img={logobootstrap} />
+      </div>
     </section>
   );
 }

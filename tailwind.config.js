@@ -51,8 +51,8 @@ module.exports = withMT({
       "active",
       "group-hover",
     ],
+    fontSmoothing: ["responsive", "hover", "focus"],
   },
 
   plugins: [require("tailwindcss-animated")],
-  
 });
