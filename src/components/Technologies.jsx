@@ -1,4 +1,4 @@
-import styles, { layout } from "../data/styles";
+import styles from "../data/styles";
 import { CardTecnologias } from "./CardTecnologias";
 import logogit from "../assets/Logo-git.webp";
 import logohtml from "../assets/Logo-HTML5.webp";
@@ -19,8 +19,13 @@ export const Technologies = () => {
   return (
     <section
       id="tecnologias"
-      className={`flex flex-1 flex-col ${styles.marginY} `}
+      className={`flex flex-1 flex-col ${styles.marginY}`}
     >
+      {/* Grandientes */}
+      <div className="absolute z-[0] w-[70%] h-[70%] -left-[50%] rounded-full blue__gradient bottom-50" />
+      <div className="absolute z-[0] w-[40%] h-[40%] -left-[50%] rounded-full white__gradient bottom-50" />
+      <div className="absolute z-[0] w-[30%] h-[30%] -left-[50%] rounded-full pink__gradient bottom-50" />
+
       <div className="">
         <h2 className={`${styles.heading2}`}>Tecnologías</h2>
         <p className={`${styles.paragraph} mb-4 text-justify`}>
