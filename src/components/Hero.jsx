@@ -26,7 +26,7 @@ export const Hero = () => {
 
 
   return (
-    <section id="home" className={`flex flex-col sm:px-16 px-6 h-screen`}>
+    <section id="home" className={`flex flex-col sm:px-16 px-6 h-[700px]`}>
       <div className={`flex-auto ${styles.flexCenter} flex-col xl:px-0`}>
         {/* Grandientes */}
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
