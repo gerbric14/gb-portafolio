@@ -1,5 +1,5 @@
 import styles from "../data/styles";
-import { CardImg } from "./CardImg";
+// import { CardImg } from "./CardImg";
 import { CardProject } from "./CardProject";
 
 
