@@ -5,9 +5,10 @@ import { CardProject } from "./CardProject";
 
 export const Projects = () => (
   <section id="proyectos" className={`flex flex-1 flex-col ${styles.marginY}`}>
-
     <div className="">
-      <h2 className={`${styles.heading2}`}>Proyectos</h2>
+      <h2 className={`${styles.heading2} text-center sm:text-left`}>
+        Proyectos
+      </h2>
       <p className={`${styles.paragraph} mb-4 text-justify text-white`}>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, quo
         fugit! Accusamus nemo autem repudiandae quae libero! Saepe nulla minima

@@ -60,7 +60,9 @@ export const Contact = () => {
       <div className="absolute z-[0] w-[30%] h-[30%] -left-[50%] rounded-full pink__gradient bottom-50" />
 
       <div className="md:max-w-[40%]">
-        <h2 className={`${styles.heading2}`}>Contáctame</h2>
+        <h2 className={`${styles.heading2} text-center sm:text-left`}>
+          Contáctame
+        </h2>
         <p className={`${styles.paragraph} mb-4 text-justify`}>
           De la mano con las tecnologías de hoy en día crearemos páginas únicas
           he increíbles adaptadas a todo tipo de pantalla y a tus necesidades.
