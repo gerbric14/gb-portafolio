@@ -44,7 +44,7 @@ function Tab({
 }) {
   return (
     <div
-      className={`max-w-sm min-w-[370px] rounded-xl overflow-hidden bg-discount-gradient ${styles.marginX} my-8`}
+      className={`max-w-sm min-w-[370px] rounded-xl overflow-hidden bg-discount-gradient ${styles.marginX} my-8 z-10`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
