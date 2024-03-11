@@ -1,18 +1,5 @@
+import { dataTecnologias } from "../data";
 import styles from "../data/styles";
-import { CardTecnologias } from "./CardTecnologias";
-import logogit from "../assets/Logo-git.webp";
-import logohtml from "../assets/Logo-HTML5.webp";
-import logojs from "../assets/Logo-JavaScript.webp";
-import logogithub from "../assets/LogoGH.webp";
-import logotailwind from "../assets/LogoTailwind.webp";
-import logoreact from "../assets/LogoReact.webp";
-import logocss from "../assets/LogoCss.webp";
-import logopostgresql from "../assets/LogoPostgresql.webp";
-import logomongo from "../assets/LogoMongoDB.webp";
-import logonext from "../assets/LogoNext.webp";
-import logonode from "../assets/LogoNodejs.webp";
-import logobootstrap from "../assets/LogoBootstrap.webp";
-
 
 export const Technologies = () => {
 
@@ -38,18 +25,22 @@ export const Technologies = () => {
       <div
         className={`my-8 flex flex-wrap place-content-center sm:grid sm:grid-cols-6 gap-2`}
       >
-        <CardTecnologias text={"Git"} img={logogit} />
-        <CardTecnologias text={"HTML5"} img={logohtml} />
-        <CardTecnologias text={"JavaScript"} img={logojs} />
-        <CardTecnologias text={"React"} img={logoreact} />
-        <CardTecnologias text={"TailwindCss"} img={logotailwind} />
-        <CardTecnologias text={"GitHub"} img={logogithub} />
-        <CardTecnologias text={"Css"} img={logocss} />
-        <CardTecnologias text={"PostgreSQL"} img={logopostgresql} />
-        <CardTecnologias text={"MongoDB"} img={logomongo} />
-        <CardTecnologias text={"NextJs"} img={logonext} />
-        <CardTecnologias text={"NodeJs"} img={logonode} />
-        <CardTecnologias text={"Bootstrap"} img={logobootstrap} />
+        {dataTecnologias.map( ({id, title, img}) => {
+            return (
+              <div key={id} className=" border border-gray-900 hover:border-cyan-500 rounded-lg p-4 flex flex-col place-content-center items-center w-[95px] h-[120px] transition-all duration-200 ease-in-out opacity-65 grayscale hover:grayscale-0 hover:opacity-100 box-shadow m-1">
+                <img
+                  src={img}
+                  alt={img}
+                  width={60}
+                  height={60}
+                  className="mb-2"
+                />
+                <h3 className="text-white mt-2">{title}</h3>
+              </div>
+            );
+
+        })}
+
       </div>
     </section>
   );

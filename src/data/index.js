@@ -1,3 +1,16 @@
+import js from '../assets/Logos/JavaScript.webp'
+import html from '../assets/Logos/LogoHtml.webp'
+import css from '../assets/Logos/LogoCss.webp'
+import react from '../assets/Logos/LogoReact.webp'
+import tailwind from '../assets/Logos/LogoTailwind.webp'
+import node from '../assets/Logos/LogoNode.webp'
+import next from '../assets/Logos/LogoNextJs.webp'
+import strapi from '../assets/Logos/LogoStrapi.webp'
+import bootstrap from '../assets/Logos/LogoBootstrap.webp'
+import github from '../assets/Logos/LogoGitHub.webp'
+import git from '../assets/Logos/LogoGit.webp'
+import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
+import mongo from '../assets/Logos/LogoMongoDB.webp'
 
 export const navLinks = [
   {
@@ -18,25 +31,62 @@ export const navLinks = [
   },
 ];
 
-export const contactInfo = [
+export const dataTecnologias = [
   {
     id: 1,
-    name: "nombre",
-    title: "Nombre",
+    title: "HTML",
+    img: html,
   },
-  { id: 2, 
-    name: "apellido", 
-    title: "Apellido" 
-  },
+  { id: 2, title: "Css", img: css },
   {
     id: 3,
-    name: "telefono",
-    title: "Teléfono (123-456-7890)",
+    title: "JavaScript",
+    img: js,
   },
   {
     id: 4,
-    name: "email",
-    title: "Email",
+    title: "React",
+    img: react,
+  },
+  {
+    id: 5,
+    title: "NodeJs",
+    img: node,
+  },
+  {
+    id: 6,
+    title: "NextJs",
+    img: next,
+  },
+  {
+    id: 7,
+    title: "TailwindCss",
+    img: tailwind,
+  },
+  {
+    id: 8,
+    title: "Bootstrap",
+    img: bootstrap,
+  },
+  {
+    id: 9,
+    title: "MongoDb",
+    img: mongo,
+  },
+  {
+    id: 10,
+    title: "PostgreSQL",
+    img: postgresql,
+  },
+  {
+    id: 11,
+    title: "Git",
+    img: git,
+  },
+  {
+    id: 12,
+    title: "GitHub",
+    img: github,
   },
 ];
 
