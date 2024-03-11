@@ -26,7 +26,11 @@ export const Modal = ({ onModal, animar }) => {
       </button>
 
       {/* Division Modal */}
-      <div className={`w-[100%] bg-tecnologias rounded-3xl transition-all duration-200 ease-in opacity-0 ${animar && 'opacity-100'} `}>
+      <div
+        className={`w-[100%] bg-tecnologias rounded-3xl transition-all duration-200 ease-in opacity-0 ${
+          animar && "opacity-100"
+        } `}
+      >
         {/* Galeria Imagenes */}
         <div className="p-4 flex flex-col md:flex-row">
           <div className="w-[100%] md:w-[70%] p-4">
@@ -56,7 +60,7 @@ export const Modal = ({ onModal, animar }) => {
             <h3 className="font-bold text-xl text-white">
               Información del proyecto:
             </h3>
-            <hr className="border border-gray-500 w-2/4 mb-3" />
+            <hr className="border border-gray-500 w-full md:w-3/4 mb-3" />
             <p className="font-semibold text-white">
               Cliente:{" "}
               <span className="text-gray-300 font-normal">Fresh Coffee.</span>
@@ -78,7 +82,7 @@ export const Modal = ({ onModal, animar }) => {
               <h3 className="font-bold text-xl text-white">
                 Descripción del proyecto:
               </h3>
-              <hr className="border border-gray-500 w-2/4 mb-3" />
+              <hr className="border border-gray-500 w-full md:w-3/4 mb-3" />
               <p className="text-justify text-gray-300 font-normal mb-4 leading-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur eligendi voluptas esse! Fuga atque dolores omnis quam
