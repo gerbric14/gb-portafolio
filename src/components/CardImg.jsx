@@ -5,12 +5,20 @@ import imgcard from "../assets/imgcard.webp";
 import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
 import js from "../assets/js2.jpg";
+import { Modal } from "./Modal";
 
 
 export function CardImg({title, desc}) {
   const [showMore, setShowMore] = useState(true);
+  const [modal, setModal] = useState(false)
 
-    function handleMoreClick() {
+
+  const handleModal = () => {
+    setModal(!modal);
+  };
+
+
+    const handleMoreClick = () => {
       setShowMore(!showMore);
     }
   
@@ -20,6 +28,8 @@ export function CardImg({title, desc}) {
         desc={desc}
         showMore={showMore}
         onShow={handleMoreClick}
+        onModal={handleModal}
+        modal={modal}
       ></Tab>
   );
 }
@@ -29,6 +39,8 @@ function Tab({
   desc,
   onShow,
   showMore,
+  onModal,
+  modal
 }) {
   return (
     <div
@@ -109,8 +121,9 @@ function Tab({
             </svg>
           </a>
 
-          <a
-            href="#"
+          <button
+            type="submit"
+            onClick={onModal}
             className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 mb-2"
           >
             Ver Projecto
@@ -128,7 +141,10 @@ function Tab({
                 d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
               />
             </svg>
-          </a>
+          </button>
+
+          {modal && <Modal onModal={onModal}/>}
+
         </div>
       </div>
     </div>
