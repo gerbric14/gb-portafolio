@@ -5,12 +5,15 @@ import react from '../assets/Logos/LogoReact.webp'
 import tailwind from '../assets/Logos/LogoTailwind.webp'
 import node from '../assets/Logos/LogoNode.webp'
 import next from '../assets/Logos/LogoNextJs.webp'
-import strapi from '../assets/Logos/LogoStrapi.webp'
 import bootstrap from '../assets/Logos/LogoBootstrap.webp'
 import github from '../assets/Logos/LogoGitHub.webp'
 import git from '../assets/Logos/LogoGit.webp'
 import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
 import mongo from '../assets/Logos/LogoMongoDB.webp'
+import strapi from '../assets/Logos/LogoStrapi.webp'
+import fcpc from "../assets/fcpc.webp";
+import fcm from "../assets/fcmovil.webp";
+import hkpc from "../assets/hkpc.webp";
 
 export const navLinks = [
   {
@@ -94,11 +97,19 @@ export const dataProject = [
   {
     id: 1,
     title: "Restaurant App",
-    desc: "app que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
+    desc: "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
+    imgpc: fcpc,
+    imgmobile: fcm,
+    cliente: "Fresh Coffee",
+    categoria: "Next App",
   },
   {
     id: 2,
     title: "Planificador de gastos",
     desc: "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas.",
+    imgpc: hkpc,
+    imgmobile: fcpc,
+    cliente: "Todos",
+    categoria: "React App",
   },
 ];

@@ -71,7 +71,7 @@ function Tab({
             />
           ) : (
             <img
-              src={js}
+              src={imgcard}
               alt={imgcard}
               className="rounded-2xl my-1 transition ease-out duration-200"
             />

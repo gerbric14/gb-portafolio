@@ -44,6 +44,7 @@ module.exports = withMT({
     },
   },
   variants: {
+    backgroundImage: ["responsive"],
     gradientColorStops: [
       "responsive",
       "hover",
