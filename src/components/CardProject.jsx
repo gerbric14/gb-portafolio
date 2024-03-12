@@ -1,13 +1,12 @@
 import { useState } from "react";
+import { Modal } from "./Modal";
+import { ButtonCard } from "./ButtonCard";
 import styles, { layout } from "../data/styles";
-import imgcard from "../assets/imgcard.webp";
 import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
-import js from "../assets/js2.jpg";
-import { Modal } from "./Modal";
-import { Button } from "@material-tailwind/react";
 
-export function CardProject({ title, desc }) {
+
+export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria }) {
   const [showMore, setShowMore] = useState(true);
   const [modal, setModal] = useState(false);
   const [animar, setAnimar] = useState(false);
@@ -26,8 +25,13 @@ export function CardProject({ title, desc }) {
 
   return (
     <Tab
+      id={id}
       title={title}
       desc={desc}
+      imgpc={imgpc}
+      imgmobile={imgmobile}
+      cliente={cliente}
+      categoria={categoria}
       showMore={showMore}
       onShow={handleMoreClick}
       onModal={handleModal}
@@ -37,11 +41,11 @@ export function CardProject({ title, desc }) {
   );
 }
 
-function Tab({ title, desc, onShow, showMore, onModal, modal, animar }) {
+function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, showMore, onModal, modal, animar }) {
 
   return (
     <div
-      className={`max-w-sm rounded-xl overflow-hidden bg-discount-gradient ${styles.marginX} my-8`}
+      className={`rounded-xl overflow-hidden bg-discount-gradient mx-6 sm:mx-4 my-8`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
@@ -59,74 +63,40 @@ function Tab({ title, desc, onShow, showMore, onModal, modal, animar }) {
         </div>
 
         {/* Imagen */}
-        <div className="w-full px-2 mb-2 group ">
-          {modal && <Modal onModal={onModal} animar={animar} />}
+        <div key={id} className="w-full px-2 mb-2 group ">
+          {modal && (
+            <Modal
+              onModal={onModal}
+              animar={animar}
+              id={id}
+              title={title}
+              desc={desc}
+              imgpc={imgpc}
+              imgmobile={imgmobile}
+              cliente={cliente}
+              categoria={categoria}
+            />
+          )}
           {showMore ? (
             <div
-              style={{ backgroundImage: `url(${js})` }}
-              className="rounded-2xl w-80 h-40 "
+              style={{ backgroundImage: `url(${imgpc})` }}
+              className="rounded-2xl w-96 h-[325px] bg-no-repeat bg-center"
             >
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
-                <h3 className="font-bold text-2xl text-white p-4">
-                  Titulo Proyecto
-                </h3>
+                <h3 className="font-bold text-2xl text-white p-4">{title}</h3>
 
-                <Button
-                  variant="outline"
-                  color="blue-gray"
-                  className="flex gap-2 font-semibold text-white hover:scale-105 mt-6"
-                  onClick={onModal}
-                >
-                  Ver Proyecto{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </Button>
+                <ButtonCard />
               </div>
             </div>
           ) : (
             <div
-              style={{ backgroundImage: `url(${js})` }}
-              className="rounded-2xl w-80 h-40 "
+              style={{ backgroundImage: `url(${imgmobile})` }}
+              className="rounded-2xl w-96 h-[325px] bg-no-repeat bg-center"
             >
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
-                <h3 className="font-bold text-xl text-white p-4">
-                  Titulo Proyecto
-                </h3>
+                <h3 className="font-bold text-xl text-white p-4">{title}</h3>
 
-                <Button
-                  variant="outline"
-                  color="blue-gray"
-                  className="flex gap-2 font-semibold text-white hover:scale-105 mt-6"
-                  onClick={onModal}
-                >
-                  Ver Proyecto{" "}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="h-5 w-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                    />
-                  </svg>
-                </Button>
+                <ButtonCard />
               </div>
             </div>
           )}

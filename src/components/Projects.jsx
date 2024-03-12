@@ -1,6 +1,6 @@
 import styles from "../data/styles";
-// import { CardImg } from "./CardImg";
 import { CardProject } from "./CardProject";
+import { dataProject } from "../data";
 
 
 export const Projects = () => (
@@ -16,35 +16,15 @@ export const Projects = () => (
       </p>
     </div>
 
-    <div
-      className={`flex flex-col items-center gap-4 md:flex-row md:justify-center text-justify`}
-    >
-      {/* <CardImg
-        title={"Restaurante App"}
-        desc={
-          "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados."
-        }
-      />
 
-      <CardImg
-        title={"Planificador de gastos"}
-        desc={
-          "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas."
-        }
-      /> */}
-
-      <CardProject
-        title={"Planificador de gastos"}
-        desc={
-          "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas."
-        }
-      />
-      <CardProject
-        title={"Planificador de gastos"}
-        desc={
-          "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas."
-        }
-      />
+    <div className="flex flex-col flex-wrap items-center md:flex-row md:justify-between lg:justify-around">
+      {dataProject.map(({id, title, desc, imgpc, imgmobile, cliente, categoria}) => {
+        return (
+          <div key={id} className={`flex`}>
+              <CardProject id={id} title={title} desc={desc} imgpc={imgpc} imgmobile={imgmobile} cliente={cliente} categoria={categoria} />
+          </div>
+        )
+      })}
     </div>
   </section>
 );
