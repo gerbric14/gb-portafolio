@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@material-tailwind/react";
 import { Modal } from "./Modal";
 
-export const ButtonCard = ({id,title, desc, imgmobile, imgpc, cliente, categoria, img1, img2, img3}) => {
+export const ButtonCard = ({id,title, desc, imgmobile, imgpc, cliente, categoria, img1, img2, img3, link}) => {
      const [modal, setModal] = useState(false);
      const [animar, setAnimar] = useState(false);
 
@@ -30,6 +30,7 @@ export const ButtonCard = ({id,title, desc, imgmobile, imgpc, cliente, categoria
              img1={img1}
              img2={img2}
              img3={img3}
+             link={link}
            />
          )}
 

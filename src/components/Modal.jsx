@@ -1,9 +1,10 @@
 import { Carousel } from "@material-tailwind/react";
 import close from "../assets/close.svg";
 import styles, { layout } from "../data/styles";
+import { Link } from "react-router-dom";
 
 
-export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, img2, img3 }) => {
+export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, img2, img3, link }) => {
 
   return (
     <div
@@ -33,7 +34,6 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
         {/* Galeria Imagenes */}
         <div className="p-4 flex flex-col md:flex-row">
           <div className="w-[100%] md:w-[70%] p-4">
-
             <Carousel transition={{ duration: 2 }} className="rounded-xl">
               <img
                 src={img1}
@@ -55,7 +55,9 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
 
           {/* Informacion Proyecto */}
           <div className="w-[100%] md:w-[40%] p-4 flex flex-col md:flex">
-            <h2 className="font-bold text-2xl text-white text-center mb-2">{title}</h2>
+            <h2 className="font-bold text-2xl text-white text-center mb-2">
+              {title}
+            </h2>
             <h3 className="font-bold text-xl text-white">
               Información del proyecto:
             </h3>
@@ -84,7 +86,9 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
             <button
               className={`${layout.boton} ${styles} mt-4 mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan`}
             >
-              Web Proyecto
+              <Link to={link} target="__blank">
+                Web Proyecto
+              </Link>
             </button>
           </div>
         </div>
