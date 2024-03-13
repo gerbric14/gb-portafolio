@@ -13,7 +13,7 @@ import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
 import mongo from '../assets/Logos/LogoMongoDB.webp'
 import strapi from '../assets/Logos/LogoStrapi.webp'
 // IMAGENES PROYECTOS
-import fcm from "../assets/fcm.webp";
+import fcmovil from "../assets/fcmovil.webp";
 import fcpc from "../assets/fcpc.webp";
 import gastospc from "../assets/gastospc.webp";
 import gastosm from "../assets/gastosm.webp";
@@ -109,7 +109,7 @@ export const dataProject = [
     title: "Restaurant App",
     desc: "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
     imgpc: fcpc,
-    imgmobile: fcm,
+    imgmobile: fcmovil,
     cliente: "Fresh Coffee",
     categoria: "Next App",
     img1: fc1,
