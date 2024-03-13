@@ -115,6 +115,7 @@ export const dataProject = [
     img1: fc1,
     img2: fc2,
     img3: fc3,
+    link: "https://quioscofreshcoffee.vercel.app/",
   },
   {
     id: 2,
@@ -127,5 +128,6 @@ export const dataProject = [
     img1: gastos1,
     img2: gastos2,
     img3: gastos3,
+    link: "https://controlgastos-gb.vercel.app/",
   },
 ];

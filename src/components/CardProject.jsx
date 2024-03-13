@@ -5,7 +5,7 @@ import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
 
 
-export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria, img1, img2, img3 }) {
+export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria, img1, img2, img3, link }) {
   const [showMore, setShowMore] = useState(true);
   const [modal, setModal] = useState(false);
   const [animar, setAnimar] = useState(false);
@@ -39,11 +39,12 @@ export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categor
       img1={img1}
       img2={img2}
       img3={img3}
+      link={link}
     ></Tab>
   );
 }
 
-function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, showMore, img1, img2, img3, }) {
+function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, showMore, img1, img2, img3, link }) {
 
   return (
     <div
@@ -86,6 +87,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
                   img1={img1}
                   img2={img2}
                   img3={img3}
+                  link={link}
                 />
               </div>
             </div>
@@ -108,6 +110,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
                   img1={img1}
                   img2={img2}
                   img3={img3}
+                  link={link}
                 />
               </div>
             </div>
