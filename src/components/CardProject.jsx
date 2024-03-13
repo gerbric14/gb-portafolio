@@ -45,7 +45,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
 
   return (
     <div
-      className={`rounded-xl overflow-hidden bg-discount-gradient mx-6 sm:mx-4 my-8`}
+      className={`max-w-[384px] rounded-xl overflow-hidden bg-discount-gradient sm:mx-6 my-8`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
@@ -80,7 +80,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
           {showMore ? (
             <div
               style={{ backgroundImage: `url(${imgpc})` }}
-              className="rounded-2xl w-96 h-[325px] bg-no-repeat bg-center"
+              className="rounded-2xl w-80 h-[320px] bg-no-repeat bg-center transition ease-in-out duration-200 "
             >
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
                 <h3 className="font-bold text-2xl text-white p-4">{title}</h3>
@@ -91,7 +91,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
           ) : (
             <div
               style={{ backgroundImage: `url(${imgmobile})` }}
-              className="rounded-2xl w-96 h-[325px] bg-no-repeat bg-center"
+              className="rounded-2xl w-80 h-[320px] bg-no-repeat bg-center transition ease-in-out duration-200"
             >
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
                 <h3 className="font-bold text-xl text-white p-4">{title}</h3>

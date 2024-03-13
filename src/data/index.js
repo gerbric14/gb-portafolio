@@ -14,6 +14,8 @@ import strapi from '../assets/Logos/LogoStrapi.webp'
 import fcpc from "../assets/fcpc.webp";
 import fcm from "../assets/fcmovil.webp";
 import hkpc from "../assets/hkpc.webp";
+import pmovil from "../assets/16.webp";
+import ppc from "../assets/17.webp";
 
 export const navLinks = [
   {
@@ -98,8 +100,8 @@ export const dataProject = [
     id: 1,
     title: "Restaurant App",
     desc: "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
-    imgpc: fcpc,
-    imgmobile: fcm,
+    imgpc: ppc,
+    imgmobile: pmovil,
     cliente: "Fresh Coffee",
     categoria: "Next App",
   },
@@ -107,8 +109,8 @@ export const dataProject = [
     id: 2,
     title: "Planificador de gastos",
     desc: "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas.",
-    imgpc: hkpc,
-    imgmobile: fcpc,
+    imgpc: ppc,
+    imgmobile: pmovil,
     cliente: "Todos",
     categoria: "React App",
   },
