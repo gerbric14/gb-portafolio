@@ -1,3 +1,4 @@
+// IMAGENES TECNOLOGIAS-LOGOS
 import js from '../assets/Logos/JavaScript.webp'
 import html from '../assets/Logos/LogoHtml.webp'
 import css from '../assets/Logos/LogoCss.webp'
@@ -11,11 +12,18 @@ import git from '../assets/Logos/LogoGit.webp'
 import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
 import mongo from '../assets/Logos/LogoMongoDB.webp'
 import strapi from '../assets/Logos/LogoStrapi.webp'
+// IMAGENES PROYECTOS
+import fcm from "../assets/fcm.webp";
 import fcpc from "../assets/fcpc.webp";
-import fcm from "../assets/fcmovil.webp";
-import hkpc from "../assets/hkpc.webp";
-import pmovil from "../assets/16.webp";
-import ppc from "../assets/17.webp";
+import gastospc from "../assets/gastospc.webp";
+import gastosm from "../assets/gastosm.webp";
+import gastos1 from "../assets/gastos1.webp";
+import gastos2 from "../assets/gastos2.webp";
+import gastos3 from "../assets/gastos3.webp";
+import fc1 from "../assets/fc1.webp";
+import fc2 from "../assets/fc2.webp";
+import fc3 from "../assets/fc3.webp";
+
 
 export const navLinks = [
   {
@@ -100,18 +108,24 @@ export const dataProject = [
     id: 1,
     title: "Restaurant App",
     desc: "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
-    imgpc: ppc,
-    imgmobile: pmovil,
+    imgpc: fcpc,
+    imgmobile: fcm,
     cliente: "Fresh Coffee",
     categoria: "Next App",
+    img1: fc1,
+    img2: fc2,
+    img3: fc3,
   },
   {
     id: 2,
     title: "Planificador de gastos",
     desc: "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas.",
-    imgpc: ppc,
-    imgmobile: pmovil,
-    cliente: "Todos",
+    imgpc: gastospc,
+    imgmobile: gastosm,
+    cliente: "CB Group",
     categoria: "React App",
+    img1: gastos1,
+    img2: gastos2,
+    img3: gastos3,
   },
 ];

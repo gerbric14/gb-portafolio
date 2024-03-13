@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { Modal } from "./Modal";
 import { ButtonCard } from "./ButtonCard";
 import styles, { layout } from "../data/styles";
 import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
 
 
-export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria }) {
+export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria, img1, img2, img3 }) {
   const [showMore, setShowMore] = useState(true);
   const [modal, setModal] = useState(false);
   const [animar, setAnimar] = useState(false);
@@ -37,11 +36,14 @@ export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categor
       onModal={handleModal}
       modal={modal}
       animar={animar}
+      img1={img1}
+      img2={img2}
+      img3={img3}
     ></Tab>
   );
 }
 
-function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, showMore, onModal, modal, animar }) {
+function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, showMore, img1, img2, img3, }) {
 
   return (
     <div
@@ -64,19 +66,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
 
         {/* Imagen */}
         <div key={id} className="w-full px-2 mb-2 group ">
-          {modal && (
-            <Modal
-              onModal={onModal}
-              animar={animar}
-              id={id}
-              title={title}
-              desc={desc}
-              imgpc={imgpc}
-              imgmobile={imgmobile}
-              cliente={cliente}
-              categoria={categoria}
-            />
-          )}
+
           {showMore ? (
             <div
               style={{ backgroundImage: `url(${imgpc})` }}
@@ -85,7 +75,18 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
                 <h3 className="font-bold text-2xl text-white p-4">{title}</h3>
 
-                <ButtonCard />
+                <ButtonCard
+                  id={id}
+                  title={title}
+                  desc={desc}
+                  imgpc={imgpc}
+                  imgmobile={imgmobile}
+                  cliente={cliente}
+                  categoria={categoria}
+                  img1={img1}
+                  img2={img2}
+                  img3={img3}
+                />
               </div>
             </div>
           ) : (
@@ -96,7 +97,18 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
               <div className="opacity-0 bg-black/80 rounded-2xl h-full flex flex-col place-content-center items-center group-hover:opacity-100 transition ease-in-out duration-200">
                 <h3 className="font-bold text-xl text-white p-4">{title}</h3>
 
-                <ButtonCard />
+                <ButtonCard
+                  id={id}
+                  title={title}
+                  desc={desc}
+                  imgpc={imgpc}
+                  imgmobile={imgmobile}
+                  cliente={cliente}
+                  categoria={categoria}
+                  img1={img1}
+                  img2={img2}
+                  img3={img3}
+                />
               </div>
             </div>
           )}
