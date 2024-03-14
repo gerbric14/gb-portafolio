@@ -107,7 +107,7 @@ export const dataProject = [
   {
     id: 1,
     title: "Restaurant App",
-    desc: "App que sirve para la toma de pedidos de cualquier restaurante o quiosco, totalmente adaptable a todas las pantallas y adicional tiene una vista para las ordenes pendientes, excelente para el equipo de cocina visualice los pedidos y complete los realizados.",
+    desc: "Aplicación diseñada para facilitar la toma de pedidos en restaurantes, con total adaptabilidad a cualquier dispositivo. Incluye una vista especial para gestionar pedidos pendientes, lo que permite al equipo de cocina visualizar y completar los pedidos de manera eficiente.",
     imgpc: fcpc,
     imgmobile: fcmovil,
     cliente: "Fresh Coffee",
@@ -120,7 +120,7 @@ export const dataProject = [
   {
     id: 2,
     title: "Planificador de gastos",
-    desc: "App que sirve para llevar un registro de los gastos que realizamos y asi tener una vision de nuestras finanzas.",
+    desc: "Aplicación diseñada para mantener un seguimiento detallado de tus gastos, brindándote una perspectiva clara de tu situación financiera.",
     imgpc: gastospc,
     imgmobile: gastosm,
     cliente: "CB Group",
