@@ -1,10 +1,8 @@
 import { useState } from "react";
 import styles, {layout} from "../data/styles";
-import logojs from "../assets/JSLogo.webp";
-import imgcard from "../assets/imgcard.webp";
 import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
-import js from "../assets/js2.jpg";
+import fcm from '../assets/fcmovil.webp'
 import { Modal } from "./Modal";
 
 
@@ -65,14 +63,14 @@ function Tab({
         <div className="w-full px-6">
           {showMore ? (
             <img
-              src={js}
-              alt={logojs}
+              src={fcm}
+              alt={fcm}
               className="rounded-2xl my-1 transition ease-out duration-200"
             />
           ) : (
             <img
-              src={imgcard}
-              alt={imgcard}
+              src={fcm}
+              alt={fcm}
               className="rounded-2xl my-1 transition ease-out duration-200"
             />
           )}

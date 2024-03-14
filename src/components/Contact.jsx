@@ -5,8 +5,6 @@ import styles, { layout } from "../data/styles";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
-import Button from "./Button";
-
 
 
 export const Contact = () => {
@@ -63,17 +61,21 @@ export const Contact = () => {
         <h2 className={`${styles.heading2} text-center sm:text-left`}>
           Contáctame
         </h2>
-        <p className={`${styles.paragraph} mb-4 text-justify`}>
-          De la mano con las tecnologías de hoy en día crearemos páginas únicas
-          he increíbles adaptadas a todo tipo de pantalla y a tus necesidades.
-          ¿Qué esperas? Contáctame y hagamos realidad eso que estas imaginando.
+        <p className={`${styles.paragraph} mb-4 text-justify text-white`}>
+          ¿Listo para hacer realidad tu sitio web? ¡Haz que tus ideas
+          cobren vida en la web ahora mismo! <br /> 
+          Contáctame y juntos crearemos el sitio web que refleja tu visión y conecta con tu audiencia de manera
+          impactante, con diseños totalmente responsivos (adaptados a todo tipo
+          de pantalla), por lo que tus usuarios podrán usarlo desde cualquier
+          dispositivo móvil o escritorio. <br />
+          ¿Qué esperas? El momento es ahora.
         </p>
       </div>
 
       <form
         ref={referenceForm}
         onSubmit={handleSubmit(onSubmit)}
-        className="mx-auto w-full md:max-w-xl py-4 px-4 "
+        className="mx-auto w-full md:max-w-xl py-4 px-4 my-auto"
       >
         <div className="grid sm:grid-cols-2 sm:gap-6">
           <div className="relative z-0 w-full mb-5 group">

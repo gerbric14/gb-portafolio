@@ -14,10 +14,10 @@ export const Technologies = () => {
       <div className="absolute z-[0] w-[30%] h-[30%] -left-[50%] rounded-full pink__gradient bottom-50" />
 
       <div className="">
-        <h2 className={`${styles.heading2} text-center sm:text-left`}>
+        <h2 className={`${styles.heading2} text-center sm:text-left font-poppins`}>
           Tecnologías
         </h2>
-        <p className={`${styles.paragraph} mb-4 text-justify`}>
+        <p className={`${styles.paragraph} mb-4 text-justify text-white font-poppins`}>
           En mi viaje por el desarrollo web he cultivado habilidades y una serie
           de experiencias. Mi stack tecnológico incluye:
         </p>

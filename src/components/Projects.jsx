@@ -4,15 +4,13 @@ import { dataProject } from "../data";
 
 
 export const Projects = () => (
-  <section id="proyectos" className={`flex flex-1 flex-col ${styles.marginY}`}>
+  <section id="proyectos" className={`flex flex-1 flex-col font-poppins ${styles.marginY}`}>
     <div className="">
-      <h2 className={`${styles.heading2} text-center sm:text-left`}>
+      <h2 className={`${styles.heading2} text-center font-poppins sm:text-left`}>
         Proyectos
       </h2>
-      <p className={`${styles.paragraph} mb-4 text-justify text-white`}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, quo
-        fugit! Accusamus nemo autem repudiandae quae libero! Saepe nulla minima
-        ducimus quod culpa dicta? Dolores velit atque quidem quam asperiores.
+      <p className={`${styles.paragraph} mb-4 text-justify text-white font-poppins`}>
+        Transformamos sus ideas en un proyecto web personalizado que captura la esencia de su visión. Cada página que construimos es una representación única de su identidad digital, destinada a inspirar tanto a usted como a sus visitantes.
       </p>
     </div>
 
