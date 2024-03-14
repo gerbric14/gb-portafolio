@@ -1,4 +1,4 @@
-import imgcard from '../assets/imgcard.webp'
+import fcm from '../assets/fcmovil.webp'
 import styles from '../data/styles';
 
 export const Card = () => (
@@ -6,7 +6,7 @@ export const Card = () => (
     className={`max-w-sm rounded-xl overflow-hidden bg-dimWhite ${styles.marginY} `}
   >
     <div className="">
-      <img className="w-full" src={imgcard} alt="Sunset in the mountains" />
+      <img className="w-full" src={fcm} alt="Sunset in the mountains" />
     </div>
 
     {/* Linea */}
