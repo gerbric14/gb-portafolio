@@ -18,7 +18,7 @@ export const Projects = () => (
     <div className="flex flex-col flex-wrap items-center md:flex-row md:justify-between lg:justify-around">
       {dataProject.map(({id, title, desc, imgpc, imgmobile, cliente, categoria , img1, img2, img3, link}) => {
         return (
-          <div key={id} className={`flex`}>
+          <div key={id} className={`flex rounded-xl`}>
               <CardProject id={id} title={title} desc={desc} imgpc={imgpc} imgmobile={imgmobile} cliente={cliente} categoria={categoria} img1={img1} img2={img2} img3={img3} link={link} />
           </div>
         )

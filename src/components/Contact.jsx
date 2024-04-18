@@ -20,7 +20,6 @@ export const Contact = () => {
     mensaje: "",
   });
 
-
   const onSubmit = () => {
 
     const serviceId = "service_xr58zdj";
@@ -62,12 +61,13 @@ export const Contact = () => {
           Contáctame
         </h2>
         <p className={`${styles.paragraph} mb-4 text-justify text-white`}>
-          ¿Listo para hacer realidad tu sitio web? ¡Haz que tus ideas
-          cobren vida en la web ahora mismo! <br /> 
-          Contáctame y juntos crearemos el sitio web que refleja tu visión y conecta con tu audiencia de manera
-          impactante, con diseños totalmente responsivos (adaptados a todo tipo
-          de pantalla), por lo que tus usuarios podrán usarlo desde cualquier
-          dispositivo móvil o escritorio. <br />
+          ¿Listo para hacer realidad tu sitio web? ¡Haz que tus ideas cobren
+          vida en la web ahora mismo! <br />
+          Contáctame y juntos crearemos el sitio web que refleja tu visión y
+          conecta con tu audiencia de manera impactante, con diseños totalmente
+          responsivos (adaptados a todo tipo de pantalla), por lo que tus
+          usuarios podrán usarlo desde cualquier dispositivo móvil o escritorio.{" "}
+          <br />
           ¿Qué esperas? El momento es ahora.
         </p>
       </div>
@@ -244,11 +244,12 @@ export const Contact = () => {
             })}
             name="mensaje"
             rows="4"
-            className="font-poppins block p-2.5 w-full text-sm text-white bg-transparent rounded-lg border border-white placeholder-gray-400 focus:ring-cyan focus:border-cyan"
+            className={`${layout.inputArea}`}
             placeholder="Coméntame sobre tu idea"
             value={mensaje}
             onChange={onInputChange}
           ></textarea>
+
           <p className="text-red-500 font-normal">
             {errors.mensaje?.type === "required" &&
               "El campo mensaje es obligatorio"}
