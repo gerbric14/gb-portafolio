@@ -27,7 +27,7 @@ import fc3 from "../assets/fc3.webp";
 
 export const navLinks = [
   {
-    id: "home",
+    id: "inicio",
     title: "Inicio",
   },
   {
