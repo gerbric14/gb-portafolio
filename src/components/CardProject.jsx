@@ -48,7 +48,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
 
   return (
     <div
-      className={`max-w-[384px] rounded-xl overflow-hidden bg-discount-gradient sm:mx-6 my-8`}
+      className={`max-w-[384px] rounded-xl overflow-hidden bg-discount-gradient sm:mx-6 my-8 shadow-lg shadow-cyan`}
     >
       <div className="flex flex-col">
         {/* Boton Icono */}
@@ -67,7 +67,6 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
 
         {/* Imagen */}
         <div key={id} className="w-full px-2 mb-2 group ">
-
           {showMore ? (
             <div
               style={{ backgroundImage: `url(${imgpc})` }}

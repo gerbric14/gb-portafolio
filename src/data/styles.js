@@ -20,6 +20,8 @@ const styles = {
 export const layout = {
   inputContact:
     "block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:border-cyan focus:outline-none focus:ring-0 peer",
+  inputArea:
+    "block py-2.5 px-0 w-full text-sm text-white rounded-lg bg-transparent border-0 border-2 border-gray-500 appearance-none focus:border-cyan focus:outline-none focus:ring-0 peer",
   labelContact:
     "font-poppins peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-cyan peer-focus:dark:text-cyan peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6",
 

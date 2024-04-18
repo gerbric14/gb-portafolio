@@ -5,7 +5,7 @@ import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 
 export const Navbar = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("Inicio");
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -52,7 +52,7 @@ export const Navbar = () => {
                 key={id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] w-9/12 
                  flex justify-center items-center rounded-full shadow-lg bg-mobile-hover p-4 hover:scale-110 hover:text-cyan ease-in duration-200 ${
-                   active === title ? "text-white" : "text-dimWhite"
+                   active === title ? "text-cyan" : "text-dimWhite"
                  } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => { 
                   setActive(title); 
