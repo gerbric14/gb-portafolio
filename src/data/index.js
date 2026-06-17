@@ -11,7 +11,6 @@ import github from '../assets/Logos/LogoGitHub.webp'
 import git from '../assets/Logos/LogoGit.webp'
 import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
 import mongo from '../assets/Logos/LogoMongoDB.webp'
-import strapi from '../assets/Logos/LogoStrapi.webp'
 // IMAGENES PROYECTOS
 import fcmovil from "../assets/fcmovil.webp";
 import fcpc from "../assets/fcpc.webp";

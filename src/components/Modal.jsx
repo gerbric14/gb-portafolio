@@ -1,6 +1,6 @@
 import { Carousel } from "@material-tailwind/react";
 import close from "../assets/close.svg";
-import styles, { layout } from "../data/styles";
+import { layout } from "../data/styles";
 import { Link } from "react-router-dom";
 
 
@@ -84,7 +84,7 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
             </div>
 
             <button
-              className={`${layout.boton} ${styles} mt-4 mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan`}
+              className={`${layout.boton} mt-4 mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan`}
             >
               <Link to={link} target="__blank">
                 Web Proyecto

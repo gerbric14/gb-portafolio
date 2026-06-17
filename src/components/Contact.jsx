@@ -22,9 +22,9 @@ export const Contact = () => {
 
   const onSubmit = () => {
 
-    const serviceId = "service_xr58zdj";
-    const templateId = "template_l322qes";
-    const apikey = "bljRmuICZsNfJVsng";
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const apikey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs
       .sendForm(serviceId, templateId, referenceForm.current, apikey)
@@ -102,7 +102,7 @@ export const Contact = () => {
             </p>
             <p className="text-red-500 font-normal">
               {errors.nombre?.type === "minLength" &&
-                "El campo nombre requiere un mínimo de 6 letras"}
+                "El campo nombre requiere un mínimo de 3 letras"}
             </p>
             <p className="text-red-500 font-normal">
               {errors.nombre?.type === "maxLength" &&
@@ -142,7 +142,7 @@ export const Contact = () => {
             </p>
             <p className="text-red-500 font-normal">
               {errors.apellido?.type === "minLength" &&
-                "El campo apellido requiere un mínimo de 6 letras"}
+                "El campo apellido requiere un mínimo de 3 letras"}
             </p>
             <p className="text-red-500 font-normal">
               {errors.apellido?.type === "maxLength" &&
@@ -265,7 +265,7 @@ export const Contact = () => {
         </div>
 
         <button
-          className={`${layout.boton} ${styles} mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan `}
+          className={`${layout.boton} mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan `}
         >
           Envíar
         </button>
