@@ -1,22 +1,12 @@
 import { useState } from "react";
 import { ButtonCard } from "./ButtonCard";
-import styles, { layout } from "../data/styles";
+import { layout } from "../data/styles";
 import laptop from "../assets/laptop.svg";
 import devices from "../assets/devices.svg";
 
 
 export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categoria, img1, img2, img3, link }) {
   const [showMore, setShowMore] = useState(true);
-  const [modal, setModal] = useState(false);
-  const [animar, setAnimar] = useState(false);
-
-  const handleModal = () => {
-    setModal(!modal);
-
-    setTimeout(() => {
-      setAnimar(!animar)    
-    }, 250);
-  };
 
   const handleMoreClick = () => {
     setShowMore(!showMore);
@@ -33,9 +23,6 @@ export function CardProject({id, title, desc, imgpc, imgmobile, cliente, categor
       categoria={categoria}
       showMore={showMore}
       onShow={handleMoreClick}
-      onModal={handleModal}
-      modal={modal}
-      animar={animar}
       img1={img1}
       img2={img2}
       img3={img3}
@@ -54,7 +41,7 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
         {/* Boton Icono */}
         <div className="flex justify-center">
           <button
-            className={`${layout.boton} ${styles} hover:bg-black/20 hover:border-black/20`}
+            className={`${layout.boton} hover:bg-black/20 hover:border-black/20`}
             onClick={onShow}
           >
             {showMore ? (

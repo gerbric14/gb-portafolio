@@ -13,7 +13,7 @@ export const IconsLogos = ({ size }) => (
     </Link>
 
     <Link
-      to="https://linkedin.com/in/devgerbric14"
+      to="https://linkedin.com/in/devgermanbriceno"
       target="__blank"
       className="ms-5"
     >
@@ -23,7 +23,7 @@ export const IconsLogos = ({ size }) => (
       />
     </Link>
 
-    <Link to="https://walink.co/bd4340" target="__blank" className="ms-5">
+    <Link to="https://walink.co/1e4d44" target="__blank" className="ms-5">
       <FaWhatsapp
         size={size}
         className="text-gray-500 hover:text-[#25D366] animate-jump-in animate-delay-700 animate-once"
