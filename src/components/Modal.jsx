@@ -1,54 +1,58 @@
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import { Carousel } from "@material-tailwind/react";
 import close from "../assets/close.svg";
 import { layout } from "../data/styles";
-import { Link } from "react-router-dom";
 
 
 export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, img2, img3, link }) => {
 
-  return (
-    <div
-      id="extralarge-modal"
-      className="fixed top-0 left-0 right-0 z-50 w-full h-screen p-4 overflow-x-hidden overflow-y-auto md:inset-0 bg-black/90 "
-    >
-      {/* Cerrar Modal */}
-      <button
-        type="button"
-        className="bg-transparent box-shadow hover:scale-125 rounded-lg w-8 h-8 ms-auto flex flex-row-reverse justify-center items-center mb-3"
-        data-modal-hide="extralarge-modal"
-      >
-        <img
-          src={close}
-          alt={close}
-          onClick={onModal}
-          className="relative top-0 right-0"
-        />
-      </button>
+  useEffect(() => {
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) document.body.style.paddingRight = `${scrollbarWidth}px`;
 
-      {/* Division Modal */}
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    };
+  }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90">
+      {/* Caja Modal */}
       <div
-        className={`w-[100%] bg-tecnologias rounded-3xl transition-all duration-200 ease-in opacity-0 ${
+        className={`relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-tecnologias rounded-3xl transition-all duration-150 ease-in opacity-0 ${
           animar && "opacity-100"
         } `}
       >
+        {/* Cerrar Modal */}
+        <button
+          type="button"
+          onClick={onModal}
+          className="absolute top-3 right-3 z-10 bg-transparent box-shadow hover:scale-125 rounded-lg w-8 h-8 flex justify-center items-center"
+        >
+          <img src={close} alt="Cerrar" />
+        </button>
+
         {/* Galeria Imagenes */}
         <div className="p-4 flex flex-col md:flex-row">
           <div className="w-[100%] md:w-[70%] p-4">
-            <Carousel transition={{ duration: 2 }} className="rounded-xl">
+            <Carousel transition={{ duration: 2 }} className="rounded-xl h-[35vh] md:h-[55vh]">
               <img
                 src={img1}
-                alt="image 1"
-                className="h-full w-full object-cover"
+                alt={`${title} - captura 1`}
+                className="h-full w-full object-contain"
               />
               <img
                 src={img2}
-                alt="image 2"
-                className="h-full w-full object-cover"
+                alt={`${title} - captura 2`}
+                className="h-full w-full object-contain"
               />
               <img
                 src={img3}
-                alt="image 3"
-                className="h-full w-full object-cover"
+                alt={`${title} - captura 3`}
+                className="h-full w-full object-contain"
               />
             </Carousel>
           </div>
@@ -73,7 +77,7 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
               <span className="text-gray-300 font-normal">{categoria}</span>
             </p>
 
-            <div className="mt-10 h-2/3">
+            <div className="mt-6">
               <h3 className="font-bold text-xl text-white">
                 Descripción del proyecto:
               </h3>
@@ -86,13 +90,14 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
             <button
               className={`${layout.boton} mt-4 mr-4 w-full sm:w-[50%] hover:bg-[#12253c] hover:border hover:border-cyan`}
             >
-              <Link to={link} target="__blank">
+              <a href={link} target="_blank" rel="noopener noreferrer">
                 Web Proyecto
-              </Link>
+              </a>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

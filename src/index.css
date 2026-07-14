@@ -18,6 +18,14 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background-color: #00040f;
+}
+
 .color-btn{
   background: #102d44;
 }
@@ -150,19 +158,18 @@
   background: var(--black-gradient);
 }
 
-.blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
-  filter: blur(123px);
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.12;
 }
 
-.pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
-  filter: blur(900px);
-}
-
-.white__gradient {
-  background: rgba(255, 255, 255, 0.6);
-  filter: blur(750px);
+.hero-glow {
+  background: radial-gradient(
+    circle,
+    rgba(34, 211, 238, 0.18) 0%,
+    rgba(34, 211, 238, 0) 70%
+  );
+  filter: blur(40px);
 }
 
 .bg-tecnologias{

@@ -11,7 +11,7 @@ export const ButtonCard = ({id,title, desc, imgmobile, imgpc, cliente, categoria
 
        setTimeout(() => {
          setAnimar(!animar);
-       }, 250);
+       }, 100);
      };
 
      return (
