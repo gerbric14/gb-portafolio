@@ -13,7 +13,7 @@ export const Footer = () => (
           className="flex items-center mb-1 sm:mb-0 space-x-3 rtl:space-x-reverse"
         >
           {/* Logo */}
-          <img src={logo} alt="logo" className="w-[42px] h-[42px]" />
+          <img src={logo} alt="Logo German Briceño" className="w-[42px] h-[42px]" />
           {/* <span className="self-center text-2xl font-poppins font-semibold whitespace-nowrap text-white">
                 GB
               </span> */}

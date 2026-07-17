@@ -45,9 +45,9 @@ function Tab({ id, title, desc, imgpc, imgmobile, cliente, categoria, onShow, sh
             onClick={onShow}
           >
             {showMore ? (
-              <img src={devices} alt={devices} />
+              <img src={devices} alt="Ver versión móvil" />
             ) : (
-              <img src={laptop} alt={laptop} />
+              <img src={laptop} alt="Ver versión escritorio" />
             )}
           </button>
         </div>

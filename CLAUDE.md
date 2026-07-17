@@ -15,7 +15,7 @@ No test suite is configured.
 
 ## Architecture
 
-Single-page portfolio for German Briceño. Built with React 18 + Vite + Tailwind CSS. No client-side routing — all sections are anchor-scrolled (`#id`) on a single page (`App.jsx`). Note: `react-router-dom` is installed but used only for `<Link>` to **external** URLs in `IconsLogos`; do not assume a route tree exists.
+Single-page portfolio for German Briceño. Built with React 18 + Vite + Tailwind CSS. No client-side routing — all sections are anchor-scrolled (`#id`) on a single page (`App.jsx`). External links use plain `<a target="_blank" rel="noopener noreferrer">`; there is no router.
 
 **Section order** (top to bottom): `Navbar → Hero → Technologies → Projects → Contact → Footer`
 
@@ -57,7 +57,6 @@ All components are barrel-exported from `src/components/index.js`. New component
 |---|---|
 | `@emailjs/browser` | Contact form email sending |
 | `react-hook-form` | Form validation |
-| `framer-motion` | Animations |
 | `typed.js` | Typewriter effect in Hero |
 | `react-toastify` | Toast notifications |
 | `@material-tailwind/react` | Wraps Tailwind config via `withMT` |

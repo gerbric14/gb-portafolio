@@ -1,33 +1,43 @@
 import { ImGithub } from "react-icons/im";
 import { GrLinkedin } from "react-icons/gr";
 import { FaWhatsapp } from "react-icons/fa6";
-import { Link } from "react-router-dom";
 
 export const IconsLogos = ({ size }) => (
   <div className="flex sm:justify-center sm:mt-0">
-    <Link to="https://github.com/gerbric14" target="__blank" className="ms-5">
+    <a
+      href="https://github.com/gerbric14"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ms-5"
+    >
       <ImGithub
         size={size}
         className="text-gray-500 hover:text-white animate-jump-in animate-delay-300 animate-once"
       />
-    </Link>
+    </a>
 
-    <Link
-      to="https://linkedin.com/in/devgermanbriceno"
-      target="__blank"
+    <a
+      href="https://linkedin.com/in/devgermanbriceno"
+      target="_blank"
+      rel="noopener noreferrer"
       className="ms-5"
     >
       <GrLinkedin
         size={size}
         className="text-gray-500 hover:text-[#0A66C2] animate-jump-in animate-delay-500 animate-once"
       />
-    </Link>
+    </a>
 
-    <Link to="https://walink.co/1e4d44" target="__blank" className="ms-5">
+    <a
+      href="https://walink.co/u89l9n"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="ms-5"
+    >
       <FaWhatsapp
         size={size}
         className="text-gray-500 hover:text-[#25D366] animate-jump-in animate-delay-700 animate-once"
       />
-    </Link>
+    </a>
   </div>
 );

@@ -26,13 +26,9 @@ export const Hero = () => {
 
 
   return (
-    <section id="inicio" className={`flex flex-col sm:px-16 px-6 h-[700px]`}>
-      <div className={`flex-auto ${styles.flexCenter} flex-col xl:px-0`}>
-        {/* Grandientes */}
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[20%] h-[20%] rounded-full bottom-40 white__gradient" />
-
+    <section id="inicio" className={`relative overflow-hidden flex flex-col sm:px-16 px-6 h-[700px]`}>
+      <div className="hero-glow pointer-events-none absolute left-1/2 top-[40%] -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] max-w-[95vw] rounded-full z-0" />
+      <div className={`relative z-10 flex-auto ${styles.flexCenter} flex-col xl:px-0`}>
         {/* barra */}
         <div className=" py-[4px] px-1 bg-discount-gradient rounded-[10px] animate-jump-in animate-delay-300 animate-once">
           <p className={`${styles.paragraph} text-white ml-2`}>

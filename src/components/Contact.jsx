@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { useDataForm } from "../hooks/useDataForm";
 import styles, { layout } from "../data/styles";
+import { Reveal } from "./Reveal";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
@@ -51,12 +52,7 @@ export const Contact = () => {
       id="contacto"
       className={`flex flex-1 flex-col md:flex-row ${styles.marginY}`}
     >
-      {/* Grandientes */}
-      <div className="absolute z-[0] w-[70%] h-[70%] -left-[50%] rounded-full blue__gradient bottom-50" />
-      <div className="absolute z-[0] w-[40%] h-[40%] -left-[50%] rounded-full white__gradient bottom-50" />
-      <div className="absolute z-[0] w-[30%] h-[30%] -left-[50%] rounded-full pink__gradient bottom-50" />
-
-      <div className="md:max-w-[40%]">
+      <Reveal className="md:max-w-[40%]">
         <h2 className={`${styles.heading2} text-center sm:text-left`}>
           Contáctame
         </h2>
@@ -70,7 +66,7 @@ export const Contact = () => {
           <br />
           ¿Qué esperas? El momento es ahora.
         </p>
-      </div>
+      </Reveal>
 
       <form
         ref={referenceForm}
