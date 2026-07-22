@@ -10,6 +10,7 @@ import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const referenceForm = useRef();
+  const renderTime = useRef(Date.now());
 
   const { register, handleSubmit, formState: { errors }, } = useForm();
 
@@ -21,7 +22,19 @@ export const Contact = () => {
     mensaje: "",
   });
 
-  const onSubmit = () => {
+  const onSubmit = (data) => {
+
+    // Anti-bot capa 1 (honeypot): campo oculto que solo rellenan los bots
+    if (data.website) {
+      onResetForm();
+      return;
+    }
+
+    // Anti-bot capa 2 (time-trap): un envío casi instantáneo delata a un bot
+    if (Date.now() - renderTime.current < 3000) {
+      onResetForm();
+      return;
+    }
 
     const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -73,6 +86,18 @@ export const Contact = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="mx-auto w-full md:max-w-xl py-4 px-4 my-auto"
       >
+        {/* Honeypot anti-bot: invisible para humanos, tentador para bots */}
+        <div className="absolute left-[-9999px] top-[-9999px]" aria-hidden="true">
+          <label htmlFor="website">No rellenar este campo</label>
+          <input
+            type="text"
+            id="website"
+            tabIndex={-1}
+            autoComplete="off"
+            {...register("website")}
+          />
+        </div>
+
         <div className="grid sm:grid-cols-2 sm:gap-6">
           <div className="relative z-0 w-full mb-5 group">
             <input
