@@ -38,11 +38,18 @@ export const Footer = () => (
       <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
       <div className="flex flex-col justify-between items-center ss:flex-row ss:items-center ss:justify-between">
         <span className="text-sm text-gray-500 mb-2 sm:text-center">
-          © 2024{" "}
+          © 2024–2026{" "}
           <a href="#" className="hover:underline">
             Dev. German Briceño
           </a>
         </span>
+
+        <a
+          href="/privacidad.html"
+          className="text-sm text-gray-500 hover:text-white hover:underline mb-2"
+        >
+          Política de privacidad
+        </a>
 
         {/*Iconos Logos */}
         <IconsLogos size={24}/>
