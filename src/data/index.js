@@ -12,16 +12,16 @@ import git from '../assets/Logos/LogoGit.webp'
 import postgresql from '../assets/Logos/LogoPostgreSQL.webp'
 import mongo from '../assets/Logos/LogoMongoDB.webp'
 // IMAGENES PROYECTOS
-import fcmovil from "../assets/fcmovil.webp";
-import fcpc from "../assets/fcpc.webp";
+import psmovil from "../assets/305PS-Mobile.webp";
+import pspc from "../assets/305PS-Desktop.webp";
 import gastospc from "../assets/gastospc.webp";
 import gastosm from "../assets/gastosm.webp";
 import gastos1 from "../assets/gastos1.webp";
 import gastos2 from "../assets/gastos2.webp";
 import gastos3 from "../assets/gastos3.webp";
-import fc1 from "../assets/fc1.webp";
-import fc2 from "../assets/fc2.webp";
-import fc3 from "../assets/fc3.webp";
+import ps1 from "../assets/305PS.webp";
+import ps2 from "../assets/305PS-2.webp";
+import ps3 from "../assets/305PS-3.webp";
 
 
 export const navLinks = [
@@ -105,16 +105,16 @@ export const dataTecnologias = [
 export const dataProject = [
   {
     id: 1,
-    title: "Restaurant App",
-    desc: "Aplicación diseñada para facilitar la toma de pedidos en restaurantes, con total adaptabilidad a cualquier dispositivo. Incluye una vista especial para gestionar pedidos pendientes, lo que permite al equipo de cocina visualizar y completar los pedidos de manera eficiente.",
-    imgpc: fcpc,
-    imgmobile: fcmovil,
-    cliente: "Fresh Coffee",
-    categoria: "Next App",
-    img1: fc1,
-    img2: fc2,
-    img3: fc3,
-    link: "https://quioscofreshcoffee.vercel.app/",
+    title: "305 Pool Services",
+    desc: "305 Pool Services es una empresa de mantenimiento de piscinas en Florida. El proyecto partió de un objetivo concreto: convertir visitantes en clientes. Para lograrlo, se presentan con claridad los servicios ofrecidos, una galería que muestra resultados reales de su trabajo, testimonios que generan confianza y un formulario de contacto que facilita el primer paso. El resultado es un sitio moderno, rápido y totalmente responsivo, pensado tanto para verse impecable en cualquier dispositivo como para impulsar el crecimiento del negocio.",
+    imgpc: pspc,
+    imgmobile: psmovil,
+    cliente: "305 Pool Services",
+    categoria: "Landing Page",
+    img1: ps1,
+    img2: ps2,
+    img3: ps3,
+    link: "https://305poolservices.com",
   },
   {
     id: 2,
