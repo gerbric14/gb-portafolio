@@ -65,7 +65,7 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
             <h3 className="font-bold text-xl text-white">
               Información del proyecto:
             </h3>
-            <hr className="border border-gray-500 w-full md:w-3/4 mb-3" />
+            <hr className="border border-cyan w-full md:w-3/4 mb-3" />
 
             <p className="font-semibold text-white">
               Cliente:{" "}
@@ -81,7 +81,7 @@ export const Modal = ({ onModal, animar, title, desc, cliente, categoria, img1, 
               <h3 className="font-bold text-xl text-white">
                 Descripción del proyecto:
               </h3>
-              <hr className="border border-gray-500 w-full md:w-3/4 mb-3" />
+              <hr className="border border-cyan w-full md:w-3/4 mb-3" />
               <p className="text-justify text-gray-300 font-normal mb-4 leading-6">
                 {desc}
               </p>
